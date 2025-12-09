@@ -28,7 +28,7 @@ export function Footer() {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={`Visit our ${social.name} page`}
-                    className="w-10 h-10 flex items-center justify-center bg-[var(--color-primary)] hover:bg-[var(--color-secondary)] text-[var(--color-neutral)] rounded-full transition-all duration-200 focus-visible:outline-3 focus-visible:outline-offset-2"
+                    className="w-10 h-10 flex items-center justify-center bg-(--color-primary) hover:bg-(--color-secondary) text-(--color-neutral) rounded-full transition-all duration-200 focus-visible:outline-3 focus-visible:outline-offset-2"
                   >
                     {social.icon === 'facebook' && <FaFacebook aria-hidden="true" className="text-lg" />}
                     {social.icon === 'instagram' && <FaInstagram aria-hidden="true" className="text-lg" />}
@@ -48,7 +48,7 @@ export function Footer() {
                     to="/" 
                     className="text-gray-200 hover:text-(--color-secondary) transition-colors duration-200 inline-flex items-center group"
                   >
-                    <span className="w-1.5 h-1.5 bg-[var(--color-secondary)] rounded-full mr-2 group-hover:w-2 transition-all duration-200"></span>
+                    <span className="w-1.5 h-1.5 bg-(--color-secondary) rounded-full mr-2 group-hover:w-2 transition-all duration-200"></span>
                     Home
                   </Link>
                 </li>
@@ -57,7 +57,7 @@ export function Footer() {
                     to="/about" 
                     className="text-gray-200 hover:text-(--color-secondary) transition-colors duration-200 inline-flex items-center group"
                   >
-                    <span className="w-1.5 h-1.5 bg-[var(--color-secondary)] rounded-full mr-2 group-hover:w-2 transition-all duration-200"></span>
+                  <span className="w-1.5 h-1.5 bg-(--color-secondary) rounded-full mr-2 group-hover:w-2 transition-all duration-200"></span>
                     About
                   </Link>
                 </li>
@@ -66,7 +66,7 @@ export function Footer() {
                     to="/bookings" 
                     className="text-gray-200 hover:text-(--color-secondary) transition-colors duration-200 inline-flex items-center group"
                   >
-                    <span className="w-1.5 h-1.5 bg-[var(--color-secondary)] rounded-full mr-2 group-hover:w-2 transition-all duration-200"></span>
+                    <span className="w-1.5 h-1.5 bg-(--color-secondary) rounded-full mr-2 group-hover:w-2 transition-all duration-200"></span>
                     Bookings
                   </Link>
                 </li>
@@ -75,7 +75,7 @@ export function Footer() {
                     to="/faq" 
                     className="text-gray-200 hover:text-(--color-secondary) transition-colors duration-200 inline-flex items-center group"
                   >
-                    <span className="w-1.5 h-1.5 bg-[var(--color-secondary)] rounded-full mr-2 group-hover:w-2 transition-all duration-200"></span>
+                    <span className="w-1.5 h-1.5 bg-(--color-secondary) rounded-full mr-2 group-hover:w-2 transition-all duration-200"></span>
                     FAQ
                   </Link>
                 </li>
@@ -84,7 +84,7 @@ export function Footer() {
                     to="/contact" 
                     className="text-gray-200 hover:text-(--color-secondary) transition-colors duration-200 inline-flex items-center group"
                   >
-                    <span className="w-1.5 h-1.5 bg-[var(--color-secondary)] rounded-full mr-2 group-hover:w-2 transition-all duration-200"></span>
+                    <span className="w-1.5 h-1.5 bg-(--color-secondary) rounded-full mr-2 group-hover:w-2 transition-all duration-200"></span>
                     Contact
                   </Link>
                 </li>
@@ -97,43 +97,43 @@ export function Footer() {
             <h2 className="text-xl font-heading font-bold mb-4 text-(--color-primary)">Contact Us</h2>
             <address className="not-italic space-y-3 text-sm">
               <div className="flex items-start gap-3">
-                <FaPhone className="text-[var(--color-secondary)] mt-1 flex-shrink-0" aria-hidden="true" />
+                  <FaPhone className="text-(--color-secondary) mt-1 shrink-0" aria-hidden="true" />
                 <div>
                   <p className="text-gray-400 text-xs mb-1">Phone</p>
                   <a 
                     href={`tel:${siteConfig.phone}`} 
-                    className="text-gray-200 hover:text-[var(--color-secondary)] transition-colors duration-200"
+                    className="text-gray-200 hover:text-(--color-secondary) transition-colors duration-200"
                   >
                     {siteConfig.phone}
                   </a>
                 </div>
               </div>
               <div className="flex items-start gap-3">
-                <FaEnvelope className="text-[var(--color-secondary)] mt-1 flex-shrink-0" aria-hidden="true" />
+                <FaEnvelope className="text-(--color-secondary) mt-1 shrink-0" aria-hidden="true" />
                 <div>
                   <p className="text-gray-400 text-xs mb-1">General Inquiries</p>
                   <a 
                     href={`mailto:${siteConfig.email}`} 
-                    className="text-gray-200 hover:text-[var(--color-secondary)] transition-colors duration-200 break-all"
+                    className="text-gray-200 hover:text-(--color-secondary) transition-colors duration-200 break-all"
                   >
                     {siteConfig.email}
                   </a>
                 </div>
               </div>
               <div className="flex items-start gap-3">
-                <FaEnvelope className="text-[var(--color-secondary)] mt-1 flex-shrink-0" aria-hidden="true" />
+                <FaEnvelope className="text-(--color-secondary) mt-1 shrink-0" aria-hidden="true" />
                 <div>
                   <p className="text-gray-400 text-xs mb-1">Bookings</p>
                   <a 
                     href={`mailto:${siteConfig.bookingEmail}`} 
-                    className="text-gray-200 hover:text-[var(--color-secondary)] transition-colors duration-200 break-all"
+                    className="text-gray-200 hover:text-(--color-secondary) transition-colors duration-200 break-all"
                   >
                     {siteConfig.bookingEmail}
                   </a>
                 </div>
               </div>
               <div className="flex items-start gap-3">
-                <FaMapMarkerAlt className="text-[var(--color-secondary)] mt-1 flex-shrink-0" aria-hidden="true" />
+                <FaMapMarkerAlt className="text-(--color-secondary) mt-1 shrink-0" aria-hidden="true" />
                 <div>
                   <p className="text-gray-400 text-xs mb-1">Address</p>
                   <p className="text-gray-200 leading-relaxed">{siteConfig.address}</p>
@@ -144,15 +144,15 @@ export function Footer() {
           
           {/* Hours */}
           <div>
-            <h2 className="text-xl font-heading font-bold mb-4 text-[var(--color-primary)] flex items-center gap-2">
-              <FaClock className="text-[var(--color-secondary)]" aria-hidden="true" />
+            <h2 className="text-xl font-heading font-bold mb-4 text-(--color-primary) flex items-center gap-2">
+              <FaClock className="text-(--color-secondary)" aria-hidden="true" />
               Hours
             </h2>
             <div className="space-y-2 text-sm">
               {Object.entries(siteConfig.hours).map(([day, hours]) => (
                 <div 
                   key={day} 
-                  className="flex justify-between items-center py-1.5 border-b border-[var(--color-support)] border-opacity-30"
+                      className="flex justify-between items-center py-1.5 border-b border-(--color-support) border-opacity-30"
                 >
                   <span className="font-semibold text-gray-200">{day}</span>
                   <span className="text-gray-300">{hours}</span>
@@ -163,13 +163,13 @@ export function Footer() {
         </div>
         
         {/* Bottom Bar */}
-        <div className="pt-8 border-t-2 border-[var(--color-support)] border-opacity-30">
+        <div className="pt-8 border-t-2 border-(--color-support) border-opacity-30">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-gray-300">
               &copy; {new Date().getFullYear()} {siteConfig.name}. All rights reserved.
             </p>
             <p className="text-sm text-gray-300">
-              Where <span className="font-bold text-[var(--color-secondary)]">fun</span> meets <span className="font-bold text-[var(--color-secondary)]">safety</span>
+              Where <span className="font-bold text-(--color-secondary)">fun</span> meets <span className="font-bold text-(--color-secondary)">safety</span>
             </p>
           </div>
         </div>
